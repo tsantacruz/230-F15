@@ -1,6 +1,11 @@
 
 public class Square implements Shape {
-
+	
+	//num sides
+	public int ns = 4;
+	//side length
+	public double sl;
+	
 	@Override
 	public double getWidth() {
 		// TODO Auto-generated method stub
@@ -22,6 +27,7 @@ public class Square implements Shape {
 	@Override
 	public void setSideLength(double sideLength) {
 		// TODO Auto-generated method stub
+		
 
 	}
 
@@ -34,13 +40,17 @@ public class Square implements Shape {
 	@Override
 	public double getInteriorAngle() {
 		// TODO Auto-generated method stub
-		return 0;
+		//-Nate tazewell
+		//since square will always have 90 degree angles
+		return 90;
 	}
 
 	@Override
 	public int getNumSides() {
 		// TODO Auto-generated method stub
-		return 0;
+		//-Nate tazewell
+		//returns the number of sides in the shape  
+		return  ns;
 	}
 
 	@Override
@@ -51,7 +61,7 @@ public class Square implements Shape {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+			
 	}
 
 }
