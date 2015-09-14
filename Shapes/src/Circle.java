@@ -8,7 +8,7 @@ private int radius;
 	
 	}
   public double getWidth(){
-	  return radius* 2;
+	  return radius * 2;
 	  
   }
   
