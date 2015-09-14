@@ -16,7 +16,8 @@ public class Hexagon implements Shape {
 
 	@Override
 	public double getArea() {
-		return ((3 * Math.sqrt(3)) / 2) * (sidelength * sidelength);
+		double area = ((3 * Math.sqrt(3)) / 2) * (sidelength * sidelength);
+		return area;
 	}
 
 	@Override
@@ -45,7 +46,7 @@ public class Hexagon implements Shape {
 
 	@Override
 	public double getSideLength() {
-		return sidelength;
+		return sideLength;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
