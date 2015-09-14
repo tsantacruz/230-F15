@@ -6,6 +6,18 @@ public class Square implements Shape {
 	//side length
 	public double sl;
 	
+	public void SizeLength(double SideLength);
+	public double permeter();
+	
+	
+	public double getPermeter(){
+		return getPermeter();
+	}
+	
+	public void setSizeLength(double SideLength){
+		this.setSizeLength(SideLength);
+	}
+	
 	@Override
 	public double getWidth() {
 		// TODO Auto-generated method stub
@@ -62,6 +74,7 @@ public class Square implements Shape {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			
+		
 	}
 
 }
