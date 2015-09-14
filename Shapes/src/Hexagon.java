@@ -1,32 +1,35 @@
 
 public class Hexagon implements Shape {
 	
-	private double sidelength;
-	private int numsides;
+	private double sideLength;
+	private int numsides = 6;
 	
 	public double getWidth() {
-		return 0;
+		double width = (sideLength * 2)	;
+		return width;
 	}
 
 	public double getHeight() {
-		return 0;
+		double height = (Math.sqrt(3)*sideLength);
+		return height;
 	}
 
 	public double getArea() {
-		double area = ((3 * Math.sqrt(3)) / 2) * (sidelength * sidelength);
+		double area = ((3 * Math.sqrt(3)) / 2) * (sideLength * sideLength);
 		return area;
 	}
 
 	public void setSideLength(double sidelength) {
-		sidelength = sidelength;
+		sideLength = sidelength;
 	}
 
 	public double getPerimeter() {
-		double perimeter = sidelength * numsides;
+		double perimeter = sideLength * numsides;
+		return perimeter;
 	}
 
 	public double getInteriorAngle() {
-		int interiorangle = (numsides-2) * 180;
+		int interiorangle = ((numsides-2) * 180) / numsides;
 		return interiorangle;
 	}
 
@@ -35,11 +38,7 @@ public class Hexagon implements Shape {
 	}
 
 	public double getSideLength() {
-		return sidelength;
+		return sideLength;
 	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+		
 }
