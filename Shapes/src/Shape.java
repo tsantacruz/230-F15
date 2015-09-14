@@ -8,6 +8,4 @@ public interface Shape {
 	public double getInteriorAngle();
 	public int getNumSides();
 	public double getSideLength();
-	
-	/*Testing - Nick*/
 }
