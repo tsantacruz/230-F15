@@ -1,6 +1,9 @@
 
 public class Square implements Shape {
 	
+	private int width; 
+	private int height; 
+	
 	//num sides
 	public int ns = 4;
 	//side length
@@ -30,10 +33,8 @@ public class Square implements Shape {
 		return 0;
 	}
 
-	@Override
 	public double getArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		return width * height; 
 	}
 
 	
@@ -53,10 +54,8 @@ public class Square implements Shape {
 		return  ns;
 	}
 
-	@Override
 	public double getSideLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getArea() * getArea(); 
 	}
 
 	public static void main(String[] args) {
