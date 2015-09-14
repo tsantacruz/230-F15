@@ -1,52 +1,43 @@
 
 public class Hexagon implements Shape {
-	private int sidelength;
-
-	@Override
+	
+	private double sidelength;
+	private int numsides;
+	
 	public double getWidth() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
 	public double getHeight() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
 	public double getArea() {
-		return ((3 * Math.sqrt(3)) / 2) * (sidelength * sidelength);
+		double area = ((3 * Math.sqrt(3)) / 2) * (sidelength * sidelength);
+		return area;
 	}
 
-	@Override
-	public void setSideLength(double sideLength) {
-		// TODO Auto-generated method stub
-		
+	public void setSideLength(double sidelength) {
+		sidelength = sidelength;
 	}
 
-	@Override
 	public double getPerimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		double perimeter = sidelength * numsides;
 	}
 
-	@Override
 	public double getInteriorAngle() {
-		// TODO Auto-generated method stub
-		return 0;
+		int interiorangle = (numsides-2) * 180;
+		return interiorangle;
 	}
 
-	@Override
 	public int getNumSides() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numsides;
 	}
 
-	@Override
 	public double getSideLength() {
 		return sidelength;
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
