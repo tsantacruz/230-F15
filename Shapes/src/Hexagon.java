@@ -1,7 +1,8 @@
 
 public class Hexagon implements Shape {
 	private int sidelength;
-
+	private double InteriorAngle;
+	private int NumSides;
 	@Override
 	public double getWidth() {
 		// TODO Auto-generated method stub
@@ -35,18 +36,18 @@ public class Hexagon implements Shape {
 	@Override
 	public double getInteriorAngle() {
 		// TODO Auto-generated method stub
-		return 0;
+		return InteriorAngle;
 	}
 
 	@Override
 	public int getNumSides() {
 		// TODO Auto-generated method stub
-		return 0;
+		return NumSides;
 	}
 
 	@Override
 	public double getSideLength() {
-		return sideLength;
+		return sidelength;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
