@@ -17,7 +17,7 @@ public class Triangle implements Shape{
 
 	};
 	public double getPerimeter() {
-
+		return getNumSides()*getSideLength();
 	};
 	public double getInteriorAngle() {
 
