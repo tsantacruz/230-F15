@@ -5,10 +5,10 @@ public class Triangle implements Shape{
 	private double sideLength;
 
 	public double getWidth() {
-		return sideLength();
+		return getSideLength();
 	};
 	public double getHeight() {
-		return (getArea()/0.5*sideLength());
+		return (getArea()/0.5*getSideLength());
 	};
 	public double getArea() {
 		return 0.5*getSideLength()*3;
