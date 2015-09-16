@@ -1,21 +1,31 @@
 
-public class Triangle {
+public class Triangle implements Shape{
 
-	private int height;
-	private int width;
+	private int NumSide();
+	private int LengthSide();
 	
-	//Returns Triangle's Height
-	public int getHeight() {
-		return height;
-	}
-
-	//Returns Triangle's Width
-	public int getWidth() {
-		return width;
-	}
-
-	//Return's the area of the Triangle
+	public double getWidth() {
+		
+	};
+	public double getHeight() {
+		
+	};
 	public double getArea() {
-		return 0.5*width*height;
-	}
+		
+	};
+	public void setSideLength(double sideLength) {
+		
+	};
+	public double getPerimeter() {
+		
+	};
+	public double getInteriorAngle() {
+		
+	};
+	public int getNumSides() {
+		
+	};
+	public double getSideLength() {
+		
+	};
 }
