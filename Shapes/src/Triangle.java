@@ -2,7 +2,7 @@
 public class Triangle implements Shape{
 
 	private int NumSide();
-	private int LengthSide();
+	private double sideLength();
 	
 	public double getWidth() {
 		
