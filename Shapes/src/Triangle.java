@@ -20,7 +20,7 @@ public class Triangle implements Shape{
 		return getNumSides()*getSideLength();
 	};
 	public double getInteriorAngle() {
-
+		return 180 / 3;
 	};
 	public int getNumSides() {
 		return NumSide;
