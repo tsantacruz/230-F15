@@ -1,7 +1,7 @@
 
 public class Triangle implements Shape{
 
-	private int NumSide;
+	private int NumSide = 3;
 	private double sideLength;
 
 	public double getWidth() {
@@ -14,7 +14,7 @@ public class Triangle implements Shape{
 		return 0.5*getSideLength()*3;
 	};
 	public void setSideLength(double sideLength) {
-
+		return sideLength();
 	};
 	public double getPerimeter() {
 		return getNumSides()*getSideLength();
