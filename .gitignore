@@ -2,3 +2,5 @@
 .recommenders
 *.class
 RemoteSystemsTempFiles
+ArrayBag_book.java
+ResizableArrayBag.java
