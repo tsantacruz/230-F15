@@ -13,7 +13,7 @@ private int radius;
   }
   
   public double getHeight(){
-	  return radius *2;
+	  return radius * 2;
   }
   public static void main(String [] args){
 	  Circle c = new Circle();
