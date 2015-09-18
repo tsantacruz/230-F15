@@ -6,9 +6,10 @@ public class Square implements Shape {
 	//side length
 	public double sl;
 	
-	public void SizeLength(double SideLength);
-	public double permeter();
+	public void SizeLength(double SideLength) {
+	SideLength = getPermeter();
 	
+	}
 	
 	public double getPermeter(){
 		return getPermeter();
@@ -36,7 +37,19 @@ public class Square implements Shape {
 		return 0;
 	}
 
-	
+	@Override
+	public void setSideLength(double sideLength) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+	@Override
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	@Override
 	public double getInteriorAngle() {
 		// TODO Auto-generated method stub
