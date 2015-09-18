@@ -9,7 +9,7 @@ public class ShapeTester {
 		// TODO each team should initialize 
 		// a shape & add to shapes
 //		Shape circle 	= new Circle(/* TODO parameters? */);
-//		Shape triangle 	= new Triangle(/* TODO parameters? */);
+	Shape triangle 	= new Triangle(double sideLength);
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
 //		Shape hexagon	= new Hexagon(/* TODO parameters? */);
 		
