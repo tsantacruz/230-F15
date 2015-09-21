@@ -60,6 +60,11 @@ public class Square implements Shape {
 		
 		//- steph d'andrea
 	}
+	
+	public double getPerimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 @Override
 	public void setSideLength(double sideLength) {
