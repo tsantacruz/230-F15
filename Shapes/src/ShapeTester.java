@@ -13,6 +13,8 @@ public class ShapeTester {
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
 //		Shape hexagon	= new Hexagon(/* TODO parameters? */);
 		
+		shapes.add(triangle);
+		
 		for (Shape shape : shapes) {
 			String s = 	"-------------------------------------";
 			s +=			"Side Length: " + shape.getSideLength();
