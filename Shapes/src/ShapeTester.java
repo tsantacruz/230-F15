@@ -18,13 +18,16 @@ public class ShapeTester {
 		Shape hexagon	= new Hexagon();
 		shapes.add(hexagon);
 		Shape square = new Square();		
-		
+		shapes.add(square);
+		shapes.add(circle);
+
 		for (Shape shape : shapes) {
-			String s = 	"---------- "+ shape.getClass() +" --------- \n";
+			String s = 	"------------------------------------- \n";
+			
 			s +=			"Side Length: " + shape.getSideLength()+"\n";
 			s +=			"Num sides:   " + shape.getNumSides()+"\n";
-			s += 	 	"Area: 		  " + shape.getArea()+"\n";
-			s += 	 	"Perimeter: 	  " + shape.getPerimeter()+"\n";
+			s += 	 		"Area: 		  " + shape.getArea()+"\n";
+			s += 	 		"Perimeter: 	  " + shape.getPerimeter()+"\n";
 			s +=			"Height:		  " + shape.getHeight()+"\n";
 			s +=			"Width:		  " + shape.getWidth()+"\n";
 			s +=			"Angle:		  " + shape.getInteriorAngle()+"\n";
