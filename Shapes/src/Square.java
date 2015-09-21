@@ -2,10 +2,11 @@ public class Square implements Shape {
 	
 	private int width; 
 	private int height; 
-	//number sides
 	public int ns = 4;
-	//side length
-	public double sl;
+	public double SideLength;
+	//number sides
+
+
 	
 	public void SizeLength(double SideLength) {
 	SideLength = getPermeter();
@@ -17,7 +18,7 @@ public class Square implements Shape {
 	}
 	
 	public void setSizeLength(double SideLength){
-		this.setSizeLength(SideLength);
+		this.setSideLength(SideLength);
 		//- steph d'andrea 
 	}
 	
