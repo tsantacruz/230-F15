@@ -11,9 +11,10 @@ public class ShapeTester {
 //		Shape circle 	= new Circle(/* TODO parameters? */);
 		Shape triangle 	= new Triangle(10.5);
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
-//		Shape hexagon	= new Hexagon(/* TODO parameters? */);
+		Shape hexagon = new Hexagon();
 		
 		shapes.add(triangle);
+		shapes.add(hexagon);
 		
 		for (Shape shape : shapes) {
 			String s = 	"-------------------------------------";
@@ -26,10 +27,8 @@ public class ShapeTester {
 			s +=			"Angle:		  " + shape.getInteriorAngle();
 			shape.setSideLength(5);
 			s +=			"New Length:  " + shape.getSideLength();
-			s +=			"-------------------------------------";
-			System.out.println(s);
+
 		}
 		
 	}
-
 }
