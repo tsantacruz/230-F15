@@ -17,11 +17,10 @@ public class ShapeTester {
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
 		Shape hexagon	= new Hexagon();
 		shapes.add(hexagon);
-		Shape square = new Square;		
+		Shape square = new Square();		
 		
 		for (Shape shape : shapes) {
-			String s = 	"------------------------------------- \n";
-			shape.setSideLength(5);
+			String s = 	"---------- "+ shape.getClass() +" --------- \n";
 			s +=			"Side Length: " + shape.getSideLength()+"\n";
 			s +=			"Num sides:   " + shape.getNumSides()+"\n";
 			s += 	 	"Area: 		  " + shape.getArea()+"\n";
@@ -29,8 +28,9 @@ public class ShapeTester {
 			s +=			"Height:		  " + shape.getHeight()+"\n";
 			s +=			"Width:		  " + shape.getWidth()+"\n";
 			s +=			"Angle:		  " + shape.getInteriorAngle()+"\n";
+			shape.setSideLength(5);
 			s +=			"New Length:  " + shape.getSideLength()+"\n";
-			s +=			"-------------------------------------";
+			//s +=			"-------------------------------------";
 			System.out.println(s);
 		}
 		
