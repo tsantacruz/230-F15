@@ -11,8 +11,9 @@ public class ShapeTester {
 //		Shape circle 	= new Circle(/* TODO parameters? */);
 		Shape triangle 	= new Triangle(10.5);
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
+		Shape square	= new Square();
 		Shape hexagon = new Hexagon();
-		
+		shapes.addAll(square);
 		shapes.add(triangle);
 		shapes.add(hexagon);
 		
