@@ -9,8 +9,8 @@ public class ShapeTester {
 		// TODO each team should initialize 
 		// a shape & add to shapes
 
-//		Shape triangle 	= new Triangle(/* TODO parameters? */);
-
+		Shape triangle 	= new Triangle();
+		shapes.add(triangle);
 	    Shape circle 	= new Circle();
 	    //Shape triangle 	= new Triangle(double sideLength);
 
