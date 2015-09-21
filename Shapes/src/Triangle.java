@@ -28,4 +28,8 @@ public class Triangle implements Shape{
 	public double getSideLength() {
 		return sideLength;
 	};
+	
+	public Triangle(double sideLength) {
+		setSideLength(sideLength);
+	}
 }
