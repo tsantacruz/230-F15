@@ -2,12 +2,16 @@ public class Square implements Shape {
 	
 	private int width; 
 	private int height; 
-	
 	//number sides
 	public int ns = 4;
 	//side length
-	public double sl;	
+	public double sl;
 	
+	public void SizeLength(double SideLength) {
+	SideLength = getPermeter();
+	
+	}
+
 	public double getPermeter(){
 		return getPermeter();
 	}
@@ -34,7 +38,6 @@ public class Square implements Shape {
 		return width * height; 
 	}
 
-	
 	@Override
 	public double getInteriorAngle() {
 		// TODO Auto-generated method stub
@@ -57,20 +60,15 @@ public class Square implements Shape {
 		//- steph d'andrea
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	}
-
-	@Override
+@Override
 	public void setSideLength(double sideLength) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public double getPerimeter() {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		return 0;
 	}
+
 
 }
