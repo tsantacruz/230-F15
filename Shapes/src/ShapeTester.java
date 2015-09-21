@@ -12,6 +12,7 @@ public class ShapeTester {
 //		Shape triangle 	= new Triangle(/* TODO parameters? */);
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
 //		Shape hexagon	= new Hexagon(/* TODO parameters? */);
+//		Shape square = new Square;		
 		
 		for (Shape shape : shapes) {
 			String s = 	"-------------------------------------";
