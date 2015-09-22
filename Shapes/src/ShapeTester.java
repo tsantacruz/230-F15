@@ -8,11 +8,10 @@ public class ShapeTester {
 		
 		// TODO each team should initialize 
 		// a shape & add to shapes
-
 		//Shape triangle 	= new Triangle();
 		//shapes.add(triangle);
 	    Shape circle 	= new Circle();
-	    //Shape triangle 	= new Triangle(double sideLength);
+	    Shape triangle 	= new Triangle(10.5);
 
 //		Shape pentagon 	= new Pentagon(/* TODO parameters? */);
 		Shape hexagon	= new Hexagon();
@@ -20,7 +19,8 @@ public class ShapeTester {
 		Shape square = new Square();		
 		shapes.add(square);
 		shapes.add(circle);
-
+		shapes.add(triangle);
+		
 		for (Shape shape : shapes) {
 			String s = 	"---------- "+ shape.getClass() +" --------- \n";
 			

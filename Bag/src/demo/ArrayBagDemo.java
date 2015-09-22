@@ -1,7 +1,7 @@
 package demo;
 
 import adt.ArrayBag;
-//import adt.ArrayBag_book;
+import adt.ArrayBag_book;
 import adt.BagInterface;
 
 /** A demonstration of the class ArrayBag
@@ -49,7 +49,7 @@ public class ArrayBagDemo
       // Filling an initially empty bag to capacity
       System.out.println("\nTesting an initially empty bag that " +
                          " will be filled to capacity:");
-		aBag = new ArrayBag<String>(7);
+		aBag = new ArrayBag_book<String>(7);
 		String[] contentsOfBag2 = {"A", "B", "A", "C", "B", "C", "D"};
 		testAdd(aBag, contentsOfBag2);
       

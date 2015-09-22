@@ -1,4 +1,5 @@
 
+
 public class Circle implements Shape  {
 
 private double radius;
@@ -11,7 +12,6 @@ private int ns;
 	}
   public double getWidth(){
 	  return radius * 2;
-	  
   }
   
   public double getHeight(){
