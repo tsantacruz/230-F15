@@ -9,8 +9,8 @@ public class ShapeTester {
 		// TODO each team should initialize 
 		// a shape & add to shapes
 
-		Shape triangle 	= new Triangle();
-		shapes.add(triangle);
+		//Shape triangle 	= new Triangle();
+		//shapes.add(triangle);
 	    Shape circle 	= new Circle();
 	    //Shape triangle 	= new Triangle(double sideLength);
 
@@ -22,7 +22,7 @@ public class ShapeTester {
 		shapes.add(circle);
 
 		for (Shape shape : shapes) {
-			String s = 	"------------------------------------- \n";
+			String s = 	"---------- "+ shape.getClass() +" --------- \n";
 			
 			s +=			"Side Length: " + shape.getSideLength()+"\n";
 			s +=			"Num sides:   " + shape.getNumSides()+"\n";
