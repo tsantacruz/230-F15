@@ -19,7 +19,8 @@ public class ShapeTester {
 		Shape square = new Square();		
 		shapes.add(square);
 		shapes.add(circle);
-
+		shapes.add(triangle);
+		
 		for (Shape shape : shapes) {
 			String s = 	"---------- "+ shape.getClass() +" --------- \n";
 			

@@ -1,0 +1,7 @@
+.metadata
+.recommenders
+*.class
+RemoteSystemsTempFiles
+ArrayBag_book.java
+ResizableArrayBag.java
+LinkedBag_book.java
