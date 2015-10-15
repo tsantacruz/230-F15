@@ -20,26 +20,25 @@ public class LinkedBag<T> implements BagInterface<T>{
 
 	@Override
 	public int getCurrentSize() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numEntries;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return numEntries == 0;
 	}
 
 	@Override
 	public boolean add(T newEntry) {
-		// TODO Auto-generated method stub
-		return false;
+		head = new Node(newEntry, head);
+		return true;
 	}
 
 	@Override
 	public T remove() {
-		// TODO Auto-generated method stub
-		return null;
+		T temp = head.data;
+		head = head.next;
+		return temp;
 	}
 
 	@Override
@@ -64,8 +63,8 @@ public class LinkedBag<T> implements BagInterface<T>{
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
+		head = null;
+		numEntries = 0;
 	}
 
 	@Override
@@ -114,8 +113,18 @@ public class LinkedBag<T> implements BagInterface<T>{
 	} // end Node
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		LinkedBag<String> bag = new LinkedBag<String>();
+		bag.add("CSCI");
+		bag.add("230");
+		bag.add("is");
+		bag.add("awesome!");
+		System.out.println(bag);
+		bag.remove();
+		System.out.println(bag);
+		bag.remove("CSCI");
+		System.out.println(bag);
+		bag.clear();
+		System.out.println(bag);
 	}
 
 }
