@@ -2,3 +2,6 @@
 .recommenders
 *.class
 RemoteSystemsTempFiles
+MyArrayStack.java
+MyLinkedStack.java
+MyPalindrome.java
