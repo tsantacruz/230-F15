@@ -32,7 +32,7 @@ public class SumExample {
 	public static void main(String[] args) {
 		long start, end; 
 		DecimalFormat df = new DecimalFormat("####0.0000");
-		int numbers[] = {10, 100, 1000, 100000, 1000000, 1000000000};
+		int numbers[] = {1, 1, 1, 10, 100, 1000, 100000, 1000000, 1000000000};
 
 		for (int n : numbers) {
 			double[] time = new double[4];
