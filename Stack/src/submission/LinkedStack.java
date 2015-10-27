@@ -39,7 +39,7 @@ public class LinkedStack<T> implements Stack<T> {
 		String s = "";
 		for (Node n = top; n != null; n = n.next)
 			s += "| " + n.data + " |\n";
-		s+= "-----------\n";
+		s+= "+++++\n";
 		return s;
 	}
 	

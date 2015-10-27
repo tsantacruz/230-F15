@@ -40,7 +40,7 @@ public class ArrayStack<T> implements Stack<T> {
 		String s = "";
 		for (int i = top; i >= 0; i--)
 			s += "| " + data[i] + " |\n";
-		s+= "-----------\n";
+		s+= "+++++\n";
 		return s;
 	}
 
