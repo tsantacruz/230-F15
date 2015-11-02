@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import adt.Queue;
-import submission.ArrayQueue;
+import submission.*;
 
 public class ArrayQueueTest {
 	private Queue<String> queue = new ArrayQueue<String>();
@@ -46,18 +46,18 @@ public class ArrayQueueTest {
 	}
 	
 	@Test
-	public void testPop() {
+	public void testDequeue() {
 		queue.clear();
 		queue.enqueue("A");
 		queue.enqueue("C");
 		String t = queue.dequeue();
-		String s = "A\n";
+		String s = "C\n";
 		assertTrue(queue.toString().equals(s));
-		assertTrue(t.equals("C"));
+		assertTrue(t.equals("A"));
 	}
 	
 	@Test
-	public void testPopEmpty() {
+	public void testDequeueEmpty() {
 		queue.clear();
 		queue.dequeue();
 		assertTrue(queue.isEmpty());
@@ -69,9 +69,9 @@ public class ArrayQueueTest {
 		queue.enqueue("A");
 		queue.enqueue("C");
 		String t = queue.peek();
-		assertTrue(t.equals("C"));
+		assertTrue(t.equals("A"));
 		t = queue.peek();
-		assertTrue(t.equals("C"));
+		assertTrue(t.equals("A"));
 		String s = "A -> C\n";
 		assertTrue(queue.toString().equals(s));
 	}
