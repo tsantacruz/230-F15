@@ -3,8 +3,8 @@ package submission;
 import adt.Stack;
 
 public class ArrayStack<T> implements Stack<T> {
-	private T[] data;
-	private int top;
+	private T[] data=(T[])new Object [MAX];
+	private int top = -1;
 
 	@Override
 	public void push(T newEntry) {
@@ -32,7 +32,8 @@ public class ArrayStack<T> implements Stack<T> {
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
+		//For loop, set all data values to null
+		// re-initialize data: data = (T[])new Object [MAX];
 		
 	}
 	
